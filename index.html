@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakell Bandeira - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Rakell da Silva Bandeira, course assignment portal, course homepage">
+    <meta name="author" content="Rakell Bandeira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="images/20240108_143012.jpg" alt="Rakell Bandeira profile picture" width="130" height="131">
+        <span>Rakell Bandeira</span>
+    </header>
+    
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">Site Plan</a></li>
+          <li><a href="#">Form</a></li>
+          
+        </ul>
+      </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <div class="card-title"><h2>Learning Activities</h2></div>
+            <div class="text-center">            <ul>
+                <li><a>Week01:</a></li>
+                <li><a>Week02:</a></li>
+                <li><a>Week03:</a></li>
+                <li><a>Week04:</a></li>
+                <li><a>Week05:</a></li>
+                <li><a>Week06:</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card-title"><h2>Information</h2></div>
+            <div class="text-center">
+                <p>Amazonas, Brasil</p>
+                <div><span> &#x26c5;</span> <span id="temper">32ºC</span><span id="weather">🎈Sunshine</span></div>
+                <p>Page Visits:000<span id="visits"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span>&copy;</span><span id="curYear"></span> 🎈<span>Rakell Bandeira 🎈 Brasil</span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    
+</body>
+</html>
