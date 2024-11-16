@@ -43,9 +43,7 @@
         flex-direction: row;
     }
 
-    nav ul li:first-child {
-        
-    }
+   
 
     nav ul li {
         display: block;
