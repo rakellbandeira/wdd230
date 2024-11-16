@@ -35,6 +35,10 @@
 
     }
 
+    #cardMetaImg{
+        display: none;
+    }
+
     nav ul {
         flex-direction: row;
     }
