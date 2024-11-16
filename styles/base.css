@@ -204,6 +204,10 @@ main h1{
 
 }
 
+#cardMetaImg{
+    display: none;
+}
+
 
 .card{
     min-width: 280px;
