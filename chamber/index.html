@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manaus Chamber of Commerce</title>
+    <link href="styles/normalize.css" rel="stylesheet">
+    <meta name="description" content="Manaus Chamber of Commerce, WDD 230 - Web Frontend Development, Rakell da Silva Bandeira">
+    <meta name="author" content="Rakell Bandeira">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="images/favicon-02.ico" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+
+    <meta property="og:title" content="Manaus Chamber of Commerce" >
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://place.abh.ai/s3fs-public/placeholder/IMG-20160518-WA0005_1200x630.jpeg" > 
+    <meta property="og:url" content="" > <!-- add site link -->
+
+    <script src="scripts/formDynamic.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+
+        <img src="images/Logo/3.png" alt="Manaus Chamber of Commerce Logo" loading="lazy" width="150">
+        <button id="buttonMenu"></button>
+        <nav class="navigation">
+            <a href="#" title="Home" id="home" class="menuitem">Home</a>
+            <a href="#" title="portfolio" id="portf" class="menuitem">Discover</a>
+            <a href="#" title="Why" id="why" class="menuitem">Directory</a>
+            <a href="#">Join us</a>
+            
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="homeHero">
+            <h1>Work together and network here</h1>
+            <!-- create the review page, opened after form is sent -->
+            <form method="get" action="review.html" class="heroForm">
+                <fieldset>
+                    <legend>Discover the possibilities:</legend>
+                    <label><input type="text" name="companyName" id="companyName" placeholder="Your company name"></label>
+                </fieldset>   
+                <fieldset>
+                    <select name="industryName" id="indusName" required>
+                        <option value="" class="selectOption" selected>Select your industry</option>
+                        <!--The remaining options are created dynamically using a provided product array.
+                            Each option must have a value attribute that is the product name. -->
+
+                    </select>
+                </fieldset> 
+                <input type="submit" value="Join your Community" id="joinButton">            
+            </form>
+        </section>
+
+        <section id="communityInfo">
+            <h2>Community Information</h2>
+            <div class="card-container">
+                
+
+                <div class="card-wrapper">
+                    <button class="scroll-btn left" onclick="scrollCards('left')"> ◀ </button>
+                    <div class="card" id="card1">
+<!--                         <img src="https://place.abh.ai/s3fs-public/placeholder/DSC_0610_1200x1200.jpeg" alt="Nature Card 1" loading="lazy">
+ -->                        <div class="card-info">
+                            <h3>Latest news on retail business at Amazon River</h3>
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card2">
+<!--                         <img src="https://place.abh.ai/s3fs-public/placeholder/DSC_0265_1200x1200.JPG" alt="Nature Card 2" loading="lazy">
+ -->                        <div class="card-info">
+                            <h3>2. Latest news on retail business at Amazon River</h3>
+                            <a href="#">See more</a>
+                            </div>
+                    </div>
+
+                    <div class="card" id="card3">
+<!--                         <img src="https://place.abh.ai/s3fs-public/placeholder/DSC_0196_1200x1200.JPG" alt="Nature Card 3" loading="lazy">
+ -->                        <div class="card-info">
+                            <h3>3. Latest news on retail business at Amazon River</h3>
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card4">
+<!--                         <img src="https://place.abh.ai/s3fs-public/placeholder/DSC_0610_1200x1200.jpeg" alt="Nature Card 1" loading="lazy">
+ -->                        <div class="card-info">
+                            <h3>Latest news on retail business at Amazon River</h3>
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card5">
+                                                <div class="card-info">
+                                                    <h3>Latest news on retail business at Amazon River</h3>
+                                                    <a href="#">See more</a>
+                                                </div>
+                                            </div>
+
+                    <button class="scroll-btn right" onclick="scrollCards('right')"> ▶ </button>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <section id="placeArea">
+            <div id="weatherCard">
+                <h2>Weather Information</h2>
+                <div id="weatherData">
+                    <img src="images/WeatherIcons/1.png" alt="Weather Icon" loading="lazy">
+                    <span id="temperature">0ºC</span>
+                    <span id="weatherTitle">Always Summer</span>
+                    <span class="weatherClass">Humidity:</span>
+                    <span class="weatherValue" id="humidity">0%</span>
+                    <span class="weatherClass">Wind Chill:</span>
+                    <span class="weatherValue" id="windChill">N/A</span>
+                </div>
+            </div>   
+
+            <div class="spotlights">
+                <h2>Business Spotlights</h2>
+                <div class="businessAccordion">
+                    <div class="accord-item">
+                        <div class="accord-topic">Bistro Fitz Carraldo  <span class="arrow">&#10140;</span></div>
+                        <div class="accord-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, facilis provident officiis sapiente modi voluptatibus hic reiciendis aspernatur! Accusantium quasi debitis dicta earum error officiis alias exercitationem cupiditate tempore facilis.</div>
+                    </div>
+                    <div class="accord-item">
+                        <div class="accord-topic">Terra e Mar <span class="arrow">&#10140;</span></div>
+                        <div class="accord-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, facilis provident officiis sapiente modi voluptatibus hic reiciendis aspernatur! Accusantium quasi debitis dicta earum error officiis alias exercitationem cupiditate tempore facilis.</div>
+                    </div>
+                    <div class="accord-item">
+                        <div class="accord-topic">Caixiri  <span class="arrow">&#10140;</span></div>
+                        <div class="accord-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, facilis provident officiis sapiente modi voluptatibus hic reiciendis aspernatur! Accusantium quasi debitis dicta earum error officiis alias exercitationem cupiditate tempore facilis.</div>
+                    </div>
+                </div>
+            </div>
+                     
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="row1">
+            <div class="row1Title"><h1>Talk to a local business consultant</h1></div>
+            <button>Join our Community</button>
+        </div>
+        <div class="row2">
+            <div class="colleft">
+                <div id="socialMedia">
+                    <a href="#"><img src="images/socialmediaIcons/instagram.png" alt="Instagram icon" loading="lazy"></a>
+                    <a href="#"><img src="images/socialmediaIcons/facebook.png" alt="Facebook icon" loading="lazy"></a>
+                    <a href="#"><img src="images/socialmediaIcons/linkedin.png" alt="LinkedIn icon" loading="lazy"></a>
+                    <a href="#"><img src="images/socialmediaIcons/email.png" alt="Email icon" loading="lazy"></a>
+                </div>
+            </div>
+
+            <div class="colright">
+                <p>&copy;<span id="currentYear">202</span> &#10059; Rakell da Silva Bandeira &#10059; Brazil</p>
+                <p id="lastModified">lastModified</p>
+            </div>
+        </div>
+
+        
+    </footer>
+    
+    
+</body>
+</html>

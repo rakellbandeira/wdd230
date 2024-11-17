@@ -1,0 +1,194 @@
+
+:root{
+    --the-primary-color:#3c5638;
+    --primary-color: #5B7B57;
+    --color-shade2: #6A8E66;
+    --color-shade3: #8FAB98;
+    --color-shade4: #BFD0C1;
+    --color-shade5: #E4E2CF;
+    --color-shade6: #ECEAE4;
+    --title-font: "DM Serif Text", serif;
+    --text-font:"Open Sans", serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--text-font);
+}
+
+@media only screen and (min-width: 1160px){
+
+    
+  header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+
+    background-color: var(--the-primary-color);
+    color: white;
+    box-shadow: rgba(16, 4, 66, 0.16) 0px 3px 6px, rgba(13, 6, 53, 0.23) 0px 3px 6px;
+    z-index: 1;
+    position: relative;
+/*     border: 3px solid red;
+*/}
+
+header div{
+    width: 50%;
+    display: flex;
+}
+
+
+#buttonMenu{
+    display: none;
+}
+
+nav{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+
+    margin-left:150px;
+
+    width: 100%;
+}
+
+    nav a{
+        display: flex;
+        min-width: 180px;
+        color: white;
+        font-size: 1.2rem;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        
+
+
+        text-decoration: none;
+
+    }
+
+    nav a:hover{
+        background-color: var(--primary-color);
+        color: var(--color-shade5);
+    }
+
+        /* hero styling */
+    #homeHero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+       
+    }
+
+    #homeHero h1{
+        grid-column: 1/2;
+
+        margin: 100px;
+        font-family: var(--title-font);
+        font-size: 5rem;
+        color: white;
+
+    }
+
+    form{
+        grid-column: 2/3;
+
+        margin: 100px;
+
+        width: 60%;
+        height: auto;
+        background-color: rgb(98, 142, 98, 0.5);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    form fieldset{
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        max-width: 100%;
+    }
+
+    fieldset legend{
+        font-family: var(--title-font);
+        font-size: 1.5rem;
+    }
+
+    form input{
+        color: var(--the-primary-color);
+        height: 50px;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    form select{
+        color: var(--the-primary-color);
+        height: 50px;
+        max-width: 100%;
+        width: 100%;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    #joinButton{
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* weather card styling */
+    #placeArea{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        padding: 50px;
+    }
+
+    .spotlights{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        padding: 50px;
+    }
+
+    #weatherCard{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 300px;
+        padding: 50px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        align-items: center;
+    }
+
+    .row1, .row2{
+        padding: 30px;
+    }
+
+    .row1Title{
+        font-size: 2rem;
+    }
+
+    .row1 button{
+        width: 60%;
+    }
+
+
+
+}

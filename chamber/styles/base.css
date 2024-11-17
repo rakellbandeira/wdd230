@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+    --the-primary-color:#3c5638;
+    --primary-color: #5B7B57;
+    --color-shade2: #6A8E66;
+    --color-shade3: #8FAB98;
+    --color-shade4: #BFD0C1;
+    --color-shade5: #E4E2CF;
+    --color-shade6: #ECEAE4;
+    --title-font: "DM Serif Text", serif;
+    --text-font:"Open Sans", serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--text-font);
+}
+
+/* nav styling */
+
+@media only screen and (max-width: 1159px) {
+
+header{
+    background-color: var(--the-primary-color);
+}
+
+#buttonMenu {
+    font-size: 3.0rem;
+    border: 0;
+    background: none;
+    color: black;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    cursor: pointer;
+}
+
+
+#buttonMenu::before {
+    content: "☰";
+}
+
+#buttonMenu.open::before {
+    content: "☰";
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    background-color: rgba(229, 229, 229, 0.9);
+    color: black;
+    
+    position: absolute;
+    /* top: 150px;
+    right: 0px; */
+
+    width: 100%;
+
+    z-index: 1;
+    
+
+    font-size: 2rem;
+}
+
+nav a{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+nav a:hover{
+    background-color: var(--primary-color);
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.open a {
+    display: block;
+}
+
+
+
+.menuitem{
+    padding: 15px;
+}
+
+}
+
+/* hero styling */
+#homeHero{
+    background-image: url('https://idbinvest.org/sites/default/files/2024-04/manaus-brazil.jpg');
+    background-position: bottom;
+    max-width: 100%;
+    height: 420px;
+
+    padding: 50px;
+}
+
+#homeHero h1{
+    font-family: var(--title-font);
+    font-size: 3rem;
+    color: white;
+}
+
+form{
+    background-color: rgb(98, 142, 98, 0.5);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    padding: 10px;
+}
+
+form fieldset{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+form input, select{
+    width: 100%;
+}
+#joinButton{
+    padding: 10px;
+    width: 100%;
+}
+
+
+/* cards styling */
+#communityInfo{
+    max-width: 100%;
+    padding: 50px 0;
+    background-color: white;
+    
+
+/*     border: solid 1px red;
+ */}
+
+#communityInfo h2{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    padding: 30px 30px 10px 50px;
+    
+}
+
+.card-container {
+    position: relative;
+    
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+    
+/*     border: solid 1px green;
+ */
+    box-sizing: border-box;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding:00px;
+    padding-left: 50px;
+
+/*     border: solid 1px purple;
+ */  }
+  
+  .card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 350px;
+    height: 450px;
+    margin-right: 16px;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 8px; */
+    overflow: hidden;
+
+/*     border: solid 1px orange;
+ */  }
+
+  #card1{
+    background-image: url("https://place.abh.ai/s3fs-public/placeholder/DSC_0610_1200x1200.jpeg");
+    max-width: 100%;
+  }
+
+  #card2{
+    background-image: url("https://place.abh.ai/s3fs-public/placeholder/DSC_0265_1200x1200.JPG");
+    max-width: 100%;
+  }
+
+  #card3{
+    background-image: url("https://place.abh.ai/s3fs-public/placeholder/DSC_0196_1200x1200.JPG");
+    max-width: 100%;
+  }
+  
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    padding: 40px;
+    background: rgba(237, 237, 237, 0.7);
+    color: rgb(53, 53, 53);
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .card-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card-info a {
+    color: #5c5c5c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: -20px;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+   /*  border-radius: 50%; */
+  }
+  
+  .scroll-btn.left {
+    left: 10px;
+  }
+  
+  .scroll-btn.right {
+    right: 10px;
+  }
+  
+  .scroll-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .card-wrapper::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+
+
+/* spotlights styling */
+.spotlights{
+    margin-top: 30px;
+    border: solid 1px lightcyan;
+}
+
+.spotlights h2{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.businessAccordion{
+    width: 100%;
+    overflow: hidden;
+}
+.accord-item{
+    /* margin-bottom: 15px;
+    border-radius: 19px; */
+    margin: 15px;
+    box-shadow:  rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.accord-item:last-child{
+    border-bottom: none;
+}
+.accord-topic{
+    padding: 20px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition:  0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border-radius: 15px; */
+}
+.accord-topic:hover{
+    background-color: rgba(151, 65, 252, 0.1);
+    color: #380459;
+}
+
+.active .faq-question{
+    background-color: rgba(151, 65, 252, 0.1);
+}
+
+.accord-text{
+    padding: 30px;
+    display: none;
+    background: white;
+
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.active .accord-text{
+    display: block;
+}
+
+.arrow{
+    transition: transform 0.3s ease;
+}
+
+.active .arrow {
+    transform: rotate(90deg);
+    color: black;
+}
+
+
+
+/* weather card styling */
+#placeArea{
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(238, 252, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+#weatherCard{
+/*     border: solid 1px red;
+ */    display: grid;
+    grid-template: 1fr 5fr/ 1fr 1fr;
+
+}
+
+#weatherCard h2{
+    grid-column: 1/3;
+
+    font-family: var(--title-font);
+    font-size: 2rem;
+    padding: 10px;
+}
+
+#weatherData{
+    grid-column: 1/3;
+    grid-row:2/3;
+
+    display: grid;
+    grid-template: 2fr 1fr 1fr 1fr/1fr 1fr;
+    align-items: center;
+}
+
+#weatherData img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    width: 100px;
+    max-width: 100%;
+    padding: 10px;
+
+    justify-self: center;
+    
+}
+
+#temperature{
+    grid-row: 1/2;
+
+    font-size: 4rem;
+    padding: 10px;
+} 
+
+#weatherTitle{
+    grid-row: 2/3;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.weatherClass{
+    grid-column: 1/2;
+    padding: 10px;
+    
+}
+
+.weatherValue{
+    grid-column: 2/3;
+    padding: 10px;
+    
+}
+
+
+/* footer styling */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--the-primary-color);
+    color: white;
+}
+
+.row1, .row2{
+    display: flex;
+    flex-direction: column;
+}
+
+.row2{
+    margin-top: 30px;
+}
+
+.row1 button{
+    margin: 15px auto;
+    padding: 10px;
+    width: 300px;
+
+    font-size: 1.5rem;
+}
+
+.row1Title{
+    
+    font-size: 1.5rem;
+
+    width: 60%;
+    margin: 80px auto 40px;
+
+    border-bottom: white;
+
+}
+
+.row1Title h1{
+    font-family: var(--title-font);
+    display: inline;
+}
+
+
+#socialMedia{
+    width: 250%;
+
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+    opacity: 0.7;
+
+/*     border: 1px solid yellow;
+*/}
+
+.colleft{
+    width: 50%;
+
+    margin: 30px auto;
+
+    display: flex;
+    justify-content: space-around;
+    
+
+/*     border: 2px solid green;
+*/}
+
+.colright{
+    padding: 50px;
+    display: grid;
+    
+    justify-content: center;
+
+}
+
+#socialMedia img{
+    width: 30px;
+    height: auto;
+}
