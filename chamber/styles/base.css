@@ -484,3 +484,69 @@ footer{
     width: 30px;
     height: auto;
 }
+
+
+
+
+
+/* Discover Page Main styling  */
+
+#discoverMain{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#discoverMain h1{
+    margin: 40px auto;
+}
+
+ .visits{
+/*     border: solid 1px red;
+ */
+    width: 90%;
+    height: 100px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+
+ }
+
+ .pictures{
+    border: solid 2px rgb(66, 29, 125);
+ }
+
+ .pictures img{
+    width: 100%;
+    margin: 5px auto;
+ }
+
+ #otherInfo{
+    background-color: beige;
+    margin: 15px auto;
+ }
+
+#otherInfo{
+    width: 90%;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+ .boxInfo{
+    
+    background-color: beige;
+   
+    margin: 10px;
+    padding: 55px;
+
+    line-height: 1.8rem;
+
+ }
+
