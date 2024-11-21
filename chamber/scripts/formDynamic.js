@@ -103,7 +103,7 @@ lastModified.innerHTML = `Last Modified: ${date}/${month}/${year} ${hour}:${min}
 let visitBox = document.getElementById('visitParag');
 let currentDate = Date.now();
 let lastVisit = localStorage.getItem('lastVisit');
-let message = '';
+let message = 'Welcome!';
 
 if (!lastVisit) {
     
