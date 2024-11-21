@@ -122,5 +122,5 @@ if (!lastVisit) {
     }
 }
 
-visitBox.innerHTML = `<p>${message}</p>`;
+visitBox.textContent = message;
 localStorage.setItem('lastVisit', currentDate);
