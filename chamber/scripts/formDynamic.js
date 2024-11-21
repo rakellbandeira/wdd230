@@ -98,3 +98,29 @@ let min = dateMod.getMinutes();
 let lastModified = document.getElementById('lastModified');
 lastModified.innerHTML = `Last Modified: ${date}/${month}/${year} ${hour}:${min}`;
 
+
+/* Visit Number dynamic */
+let visitBox = document.getElementById('visitParag');
+let currentDate = Date.now();
+let lastVisit = localStorage.getItem('lastVisit');
+let message = '';
+
+if (!lastVisit) {
+    
+    message = "Welcome! Let us know if you have any questions.";
+} else {
+    
+    let timeDifference = currentDate - lastVisit; 
+    let daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24)); 
+
+    if (daysDifference < 1) {
+        message = "Back so soon! Awesome!";
+    } else if (daysDifference === 1) {
+        message = "You last visited 1 day ago.";
+    } else {
+        message = `You last visited ${daysDifference} days ago.`;
+    }
+}
+
+visitBox.innerHTML = `<p>${message}</p>`;
+localStorage.setItem('lastVisit', currentDate);

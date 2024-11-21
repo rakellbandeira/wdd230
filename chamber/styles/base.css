@@ -516,8 +516,8 @@ footer{
 
  }
 
- .pictures{
-    border: solid 2px rgb(66, 29, 125);
+ figure{
+    margin: 20px 20px 30px;
  }
 
  .pictures img{
