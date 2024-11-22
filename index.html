@@ -33,48 +33,49 @@
           <li><a href="chamber/index.html">Chamber</a></li>
           <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
           <li><a href="#">Form</a></li>
-          
+          <li id="mode">DARK MODE</li>
         </ul>
-        <div id="mode"> DARK MODE
-        </div>
+        
       </nav>
 
     <main>
         <img id="cardMetaImg" src="images/Screenshot 2024-11-15 202608.png" alt="Meta Card image">
-        <picture>
-            <source media="(max-width: 500px)" srcset="images/temples/hero-small.webp">
-            <source media="(max-width: 1000px)" srcset="images/temples/hero-medium.webp">
-            <img src="images/temples/hero-large.webp" alt="Argentina Temple" width="2" height="1">
-        </picture>
-        <h1 id="title">WDD 23: Web Frontend Development</h1>
-        <section class="card">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/temples/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/temples/hero-medium.webp">
+                <img src="images/temples/hero-large.webp" alt="Argentina Temple">
+            </picture>
+            <div class="heroLabel">Argentina Temple</div>
+        </div>
+        <h1 id="title">WDD 230: Web Frontend Development</h1>
+        <section class="card" id="card1">
             <div class="card-title"><h2>Learning Activities</h2></div>
             <div class="text-center">            <ul>
-                <li>Week01: [Check the navigation link above]</li>
+                <li>Week01: <a href="week01/media-query.html">Media Query</a> | <a href="week01/holygrail.html">Holygrail CSS</a></li>
                 <li>Week02: <span><a href="week02/design.html">Web Design Principles</a></span> | <span><a href="week02/bom.html">Book of Mormon Activity</a></span></li>
-                <li>Week03: <a href="week03/images/landscape.webp">WebP</a></li> | <a href="week03/lazyload.html">Lazy Loading Activity</a> | <a href="week03/responsive-images.html">Responsive Images: srcset Activity</a> | <a href="week03/bom2.html">Bom - Web Storage API - localStorage Activity</a>
+                <li>Week03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading Activity</a> | <a href="week03/responsive-images.html">Responsive Images: srcset Activity</a> | <a href="week03/bom2.html">Bom - Web Storage API - localStorage Activity</a></li>
                 <li>Week04:</li>
                 <li>Week05:</li>
                 <li>Week06:</li>
                 </ul>
             </div>
         </section>
-        <section class="card">
-            <div class="hero">
-                <picture>
-                    <source media="(max-width: 500px)" srcset="images/temples/hero-small.webp">
-                    <source media="(max-width: 1000px)" srcset="images/temples/hero-medium.webp">
-                    <img src="images/temples/hero-large.webp" alt="Argentina Temple" width="2" height="1">
-                </picture>
-            </div>
-
+        <section class="card" id="card2">
+            
             <div class="card-title"><h2>Information</h2></div>
             <div class="text-center">
                 <p>Amazonas, Brasil</p>
                 <div><span> &#x26c5;</span> <span id="temper">32ºC</span><span id="weather">🎈Sunshine</span></div>
-                <p>Page Visits:000<span id="visits"></span></p>
+                <section class="visits">
+                    <h2>&#128516;</h2>
+                    <div id="visitParag">Welcome!</div>
+                </section>
             </div>
         </section>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254987.9318033002!2d-59.96710389999996!3d-3.04466205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bc8b37647b7%3A0x2b485c9ff765a9cc!2sManaus%2C%20State%20of%20Amazonas!5e0!3m2!1sen!2sbr!4v1732240814247!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
     </main>
     <footer>
         <p><span>&copy;</span><span id="curYear"></span> 🎈<span>Rakell Bandeira 🎈 Brasil</span></p>

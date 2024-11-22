@@ -19,10 +19,7 @@
 }
 
 
-a{
-    text-decoration: none;
-    color: inherit;    
-}
+
 
 body{
     background-color: var(--secondary-color);
@@ -169,12 +166,15 @@ nav ul li:first-child a {
 }
 
 #mode {
-	position: absolute;
-	
-	right: 11rem;
+	display: grid;
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 1rem;
+    justify-items: center;
+    border: solid 1px white;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 
@@ -194,31 +194,54 @@ nav ul li:first-child a {
 main{
     max-width: 100%;
     display: grid;
-    grid-template: 120px 1fr 1fr / 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
     justify-items: center;
     margin: 0 auto;
-    padding: 5px;
+    
 }
 
 main h1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
     width: 100%;
-    justify-content: center;
+       
     padding: 40px;
+    margin: auto 5px;
     color:rgb(255, 255, 255);
 
     font-family: var(--title-font);
-    font-size: 1.6rem;
-    overflow: hidden;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    
 
 }
 
 .hero{
-    grid-column: 1/4;
+    grid-column: 1/2;
     grid-row: 1/2;
-    border: solid 1px yellow;
     width: 100%;
-    height: 200px;
+    height: 150px;
+    overflow: hidden;
+    
 }
+
+.hero img{
+    width: 100%;  
+    box-sizing: border-box;
+  
+}
+
+.heroLabel{
+    position: absolute;
+    top: 280px;
+	left: 30px;
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+}
+
 
 #cardMetaImg{
     display: none;
@@ -229,6 +252,7 @@ main h1{
     min-width: 280px;
     width: 80%;
     min-height: 120px;
+    
     
     
     margin: 5px;
@@ -266,6 +290,14 @@ main h1{
     gap: 15px;
     justify-items: center;
     align-items: center;
+}
+
+iframe{
+    max-width: 80%;
+    height: 200px;
+    grid-column: 1/2;
+
+    margin: 35px;
 }
 
 
