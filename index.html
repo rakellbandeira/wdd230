@@ -41,7 +41,12 @@
 
     <main>
         <img id="cardMetaImg" src="images/Screenshot 2024-11-15 202608.png" alt="Meta Card image">
-        <h1 id="title">WDD 230: Web Frontend Development</h1>
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/temples/hero-small.webp">
+            <source media="(max-width: 1000px)" srcset="images/temples/hero-medium.webp">
+            <img src="images/temples/hero-large.webp" alt="Argentina Temple" width="2" height="1">
+        </picture>
+        <h1 id="title">WDD 23: Web Frontend Development</h1>
         <section class="card">
             <div class="card-title"><h2>Learning Activities</h2></div>
             <div class="text-center">            <ul>
@@ -55,6 +60,14 @@
             </div>
         </section>
         <section class="card">
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/temples/hero-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/temples/hero-medium.webp">
+                    <img src="images/temples/hero-large.webp" alt="Argentina Temple" width="2" height="1">
+                </picture>
+            </div>
+
             <div class="card-title"><h2>Information</h2></div>
             <div class="text-center">
                 <p>Amazonas, Brasil</p>
