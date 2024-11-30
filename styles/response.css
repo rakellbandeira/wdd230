@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --primar-color:white;
+    --secondar-color: rgb(105, 3, 95);
+    --highlight-color: rgb(99, 219, 207);
+    --highlightwo-color: rgb(115, 19, 175);
+}
+
+@media screen and (min-width:728px){
+
+
+main{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 200px auto;
+}
+
+.hero{
+    grid-column: 1/4;
+}
+
+#formbody{
+    grid-column: 2/3;
+
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--highlightwo-color);
+
+    margin: 50px;
+    padding: 20px 50px;
+
+}
+
+.wf2{
+    color: white;
+}
+
+.wf2 p{
+    margin: 20px;
+}
+
+.wf2 fieldset{
+    margin: 2rem 0;
+    border: none;
+    
+    padding: .5rem 2%;
+
+    width: 350px;
+
+    font-size: 2rem;
+}
+
+.wf2 legend{
+    color: var(--primar-color);
+    padding: 0 .5rem;
+    
+}
+
+.wf2 label{
+    display: block;
+    padding-top: 1rem;
+    color: var(--primar-color);
+    font-size: 1.0rem;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+
+.wf2 div{
+    padding-top: 1rem;
+    color: var(--primar-color);
+    font-size: .9rem;
+}
+
+.wf2 input[type="text"],
+.wf2 input[type="tel"],
+.wf2 input[type="email"],
+.wf2 input[type="url"],
+.wf2 input[type="date"],
+.wf2 select,
+.wf2 input[type="number"] {
+    background-color: #eee;
+    display: block;
+    margin: 0 2px;
+    
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--highlight-color);
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+}
+
+.wf2 input[type="radio"],
+.wf2 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf2 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--highlight-color), rgb(5, 104, 94));
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf2 input:required{
+    border-bottom: solid 8px var(--secondar-color);
+}
+
+.wf2 input:required:valid{
+    border-bottom: solid 8px green;
+}
+
+footer{
+    position: relative;
+    
+}
+
+
+}
+
+@media screen and (max-width:727px){
+
+    main{
+        height: auto;
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px auto; */
+
+        
+    }
+
+    .hero{
+        /* grid-column: 1/2; */
+        max-width: 100%;
+    
+    }
+
+    #formbody{
+        /* grid-column: 1/2; */
+
+        display: flex;
+        flex-direction: column;
+        background-color: var(--highlightwo-color);
+
+        padding: 0px 50px;
+
+        max-width: 100%;
+
+    }
+
+    #formbody h1{
+        font-size: 3rem;
+    }
+
+    .wf2 p{
+        color: white;
+        margin: 0 auto 35px;
+    }
+
+    .wf2 fieldset{
+        margin: 1rem 0;
+        border: none;
+        
+        padding: .5rem 2%;
+
+        width: 350px;
+
+        font-size: 2rem;
+    }
+
+    .wf2 legend{
+        color: var(--primar-color);
+        padding: 0 .5rem;
+        
+    }
+
+    .wf2 label{
+        display: block;
+        padding-top: 1rem;
+        color: var(--primar-color);
+        font-size: 1.0rem;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+
+
+    .wf2 div{
+        padding-top: 1rem;
+        color: var(--primar-color);
+        font-size: .9rem;
+    }
+
+    .wf2 input[type="text"],
+    .wf2 input[type="tel"],
+    .wf2 input[type="email"],
+    .wf2 input[type="url"],
+    .wf2 input[type="date"],
+    .wf2 select,
+    .wf2 input[type="number"] {
+        background-color: #eee;
+        display: block;
+        margin: 0 2px;
+        
+        border: solid 1px #999;
+        border-radius: 6px;
+        padding: .75rem;
+        color: var(--highlight-color);
+        width: 100%;
+        max-width: 260px;
+        appearance: none;
+    }
+
+    .wf2 input[type="radio"],
+    .wf2 input[type="checkbox"] {
+        margin-right: 6px;
+    }
+
+    .wf2 input[type="submit"] {
+        border: none;
+        background-image: linear-gradient(var(--highlight-color), rgb(5, 104, 94));
+        color: #fff;
+        font-weight: bold;
+        border-radius: 6px;
+        padding: .8rem;
+        width: 100%;
+        max-width: 280px;
+        margin: -1rem 2% 2rem 2%;
+        box-shadow: 1px 1px 4px #999;
+    }
+
+    .wf2 input:required{
+        border-bottom: solid 8px var(--secondar-color);
+    }
+
+    .wf2 input:required:valid{
+        border-bottom: solid 8px green;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakell Bandeira - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    
+    <meta name="description" content="WDD 230 - Web Frontend Development, Rakell da Silva Bandeira, course assignment portal, course homepage">
+    <meta name="author" content="Rakell Bandeira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link href="images/favicon.ico" rel="icon">
+    <meta property="og:title" content="WDD230 - Web Development I" >
+    <meta property="og:type" content="article" >
+    <meta property="og:image" content="https://loremflickr.com/cache/resized/4124_5022962203_fee70eafdc_h_1200_630_nofilter.jpg" >
+    <meta property="og:url" content="https://rakellbandeira.github.io/wdd230/#" >
+
+</head>
+<body>
+
+    <header>
+        <img src="images/20240108_143012.jpg" alt="Rakell Bandeira profile picture" width="130" height="131">
+        <span>Rakell Bandeira</span>
+    </header>
+    
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="chamber/index.html">Chamber</a></li>
+          <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+          <li><a href="#">Form</a></li>
+          <li id="mode">DARK MODE</li>
+        </ul>
+        
+      </nav>
+
+    <main>
+        <img id="cardMetaImg" src="images/Rakell.png" alt="Meta Card image">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/temples/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/temples/hero-medium.webp">
+                <img src="images/temples/hero-large.webp" alt="Argentina Temple">
+            </picture>
+            <div class="heroLabel">Argentina Temple</div>
+        </div>
+
+        <div id="formbody">
+        
+            <h1 id="title">Form Page</h1>
+
+            <form method="get" action="record.html" class="wf1">
+                <fieldset>
+                    <label><span>Username*</span>:<input type="text" name="username" id="userName" required></label>
+                    <label><span>Password*</span>:<input type="text" name="password1" id="passWord1" pattern="[A-Za-z0-9]{8,}" title="Eight alpha-numeric characters long" required></label>
+                    <label><span>Password Confirmation*:</span><input type="text" name="password2" id="passWord2" pattern="[A-Za-z0-9]{8,}" title="Eight alpha-numeric characters long" required></label>
+                    <label><span>Email:<input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Page Rating</legend>
+                    <label><input type="radio" name="rating" value="onestar" id="rate1">☆</label>
+                    <label><input type="radio" name="rating" value="twostar" id="rate2">☆☆</label>
+                    <label><input type="radio" name="rating" value="threestar" id="rate3">☆☆☆</label>
+                    <label><input type="radio" name="rating" value="fourstar" id="rate4">☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="fivestar" id="rate5">☆☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="sixstar" id="rate6">☆☆☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="sevenstar" id="rate7">☆☆☆☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="eightstar" id="rate8">☆☆☆☆☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="ninestar" id="rate9">☆☆☆☆☆☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="tenstar" id="rate10">☆☆☆☆☆☆☆☆☆☆</label>
+
+                </fieldset>
+
+                <input type="submit" value="Send my Rating">
+
+
+            </form>
+
+        </div>
+        
+
+        
+    </main>
+    <footer>
+        <p><span>&copy;</span><span id="curYear"></span> 🎈<span>Rakell Bandeira 🎈 Brasil</span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/base.js"></script>
+
+</body>
+</html>

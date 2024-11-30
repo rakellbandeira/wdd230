@@ -26,6 +26,7 @@ body{
     font-family: var(--text-font);
 }
 
+
 header{
     background-color: var(--primary-color);
     /* max-width: 100%; */
