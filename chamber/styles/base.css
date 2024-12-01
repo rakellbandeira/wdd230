@@ -21,6 +21,22 @@
     font-family: var(--text-font);
 }
 
+#formMain{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+}
+
 /* nav styling */
 
 @media only screen and (max-width: 1159px) {
@@ -114,24 +130,78 @@ nav a:hover{
 }
 
 form{
-    background-color: rgb(98, 142, 98, 0.5);
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
+    width: 400px;
     padding: 10px;
+
 }
 
 form fieldset{
     padding: 10px;
     margin: 10px;
     border: none;
+
+    
+
 }
 
-form input, select{
-    width: 100%;
+
+form p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form input, select, textarea{
+    width: 350px;
+    padding: 10px;
+    font-size: 1rem;
+
+    border-radius: 5px;
+}
+
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+
+
 #joinButton{
     padding: 10px;
-    width: 100%;
+    width: 350px;
+}
+
+/* membership I=information */
+.membership-info {
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    height: 350px;
+}
+
+.membership-info h2 {
+    font-size: 1.2rem;
+    margin: 30px auto;
+}
+
+.membership-info ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2rem;
 }
 
 

@@ -124,3 +124,8 @@ if (!lastVisit) {
 
 visitBox.textContent = message;
 localStorage.setItem('lastVisit', currentDate);
+
+/* time stamp */
+window.onload = function () {
+    document.getElementById("timestamp").value = new Date().toISOString();
+};
