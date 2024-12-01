@@ -180,7 +180,15 @@ button {
 
 #joinButton{
     padding: 10px;
-    width: 350px;
+        width: 350px;
+        max-width: 100%;
+
+        display: grid;
+        justify-items: center;
+
+        height: 50px;
+        
+
 }
 
 /* membership I=information */

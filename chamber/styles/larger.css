@@ -116,10 +116,12 @@ nav{
     
     }
 
-    form{
-        
+    #joinForm{
         grid-column: 1/2;
+    }
 
+    form{     
+        
         
         width: 400px;
         height: auto;
@@ -168,7 +170,7 @@ nav{
 
     form input{
         color: var(--the-primary-color);
-        height: 50px;
+        height: 30px;
         max-width: 100%;
         margin: 0;
         padding-left: 10px;
@@ -185,8 +187,14 @@ nav{
 
     #joinButton{
         padding: 10px;
-        width: 100%;
+        width: 350px;
         max-width: 100%;
+
+        display: grid;
+        justify-items: center;
+
+        height: 50px;
+        
     }
 
     /* weather card styling */
