@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root{
+    --primary-color: rgb(58, 65, 53);
+    --second-color: rgb(158, 173, 113);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+
+    font-size: 2rem;
+    color: var(--second-color);
+
+    margin-top: 70px;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 80px auto;
+
+}
+
+section{
+    margin: 4px;
+
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+section h2{
+    font-size: 2rem;
+    justify-self: center;
+}
+
+section p{
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+section img{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+footer{
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.5rem;
+
+    background-color: var(--second-color);
+}
