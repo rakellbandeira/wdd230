@@ -293,6 +293,53 @@ main h1{
     align-items: center;
 }
 
+#place{
+    font-size: 2rem;
+}
+
+#weather-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 150px;
+    border-radius: 7px;
+
+    padding: 15px;
+   
+}
+
+#weather-box img{
+    margin: 0 auto;
+
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+
+#weather-descrip{
+   font-size: 1.2rem;
+   align-content:start;
+   
+}
+
+
+#temper{
+    font-size: 2.5rem;
+}
+
+#weather-descrip::first-letter{
+    text-transform: uppercase;
+    
+}
+
+#visitParag{
+    font-size: 1.5rem;
+}
+
 iframe{
     max-width: 80%;
     height: 200px;

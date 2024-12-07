@@ -1,0 +1,90 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holygrail CSS"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Web Design Principles"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "Book of Mormon Activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP Activity"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading Activity"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images: srcset Activity"
+                },
+                {
+                    "url": "week03/bom2.html",
+                    "title": "Bom - Web Storage API - localStorage Activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Rakell-Bandeira/pen/NPKPjpW",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "images/cSSCombinators.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Rakell-Bandeira/pen/zxOraQK?editors=1100",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Consuming a Weather API"
+                }
+            ]
+        }
+        
+    ]
+}

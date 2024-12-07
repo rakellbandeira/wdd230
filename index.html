@@ -51,13 +51,13 @@
         <h1 id="title">WDD 230: Web Frontend Development</h1>
         <section class="card" id="card1">
             <div class="card-title"><h2>Learning Activities</h2></div>
-            <div class="text-center">            <ul>
-                <li>Week01: <a href="week01/media-query.html">Media Query</a> | <a href="week01/holygrail.html">Holygrail CSS</a></li>
-                <li>Week02: <span><a href="week02/design.html">Web Design Principles</a></span> | <span><a href="week02/bom.html">Book of Mormon Activity</a></span></li>
-                <li>Week03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading Activity</a> | <a href="week03/responsive-images.html">Responsive Images: srcset Activity</a> | <a href="week03/bom2.html">Bom - Web Storage API - localStorage Activity</a></li>
-                <li>Week04: <a href="https://codepen.io/Rakell-Bandeira/pen/NPKPjpW">CSS Pseudo-Classes</a> | <a href="images/cSSCombinators.png">CSS Combinators</a> | <a href="week04/tablebuild.html">HTML Tables for Data Presentation</a> | <a href="form.html">Form Activity</a></li>
-                <li>Week05: <a href="https://codepen.io/Rakell-Bandeira/pen/zxOraQK?editors=1100">CSS Pseudo-elements</a> | <a href="week05/prophets.html">The Fetch API</a> | <a href="week05/weather.html">Consuming a Weather API</a></li>
-                <li>Week06:</li>
+            <div class="text-center">            
+                <ul>
+                    <li>Week01: </li>
+                    <li>Week03: </li>
+                    <li>Week04: </li>
+                    <li>Week05: </li>
+                    <li>Week06: </li>
                 </ul>
             </div>
         </section>
@@ -65,10 +65,12 @@
             
             <div class="card-title"><h2>Information</h2></div>
             <div class="text-center">
-                <p>Amazonas, Brasil</p>
-                <div><span> &#x26c5;</span> <span id="temper">32ºC</span><span id="weather">🎈Sunshine</span></div>
+                <p id="place">Amazonas, Brasil</p>
+                <div id="weather-box">
+                    <img id="weather-icon" src="" alt=""> <!-- &#x26c5; --></span> 
+                    <span id="temper"><!-- 32ºC --></span>
+                    <span id="weather-desc-title">Weather:</span> <p id="weather-descrip"><!-- 🎈Sunshine --></p></div>
                 <section class="visits">
-                    <h2>&#128516;</h2>
                     <div id="visitParag">Welcome!</div>
                 </section>
             </div>
@@ -83,6 +85,7 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/base.js"></script>
+    <script src="scripts/weather.js" defer></script>
 
 </body>
 </html>

@@ -20,6 +20,7 @@ async function apiFetch() {
     }
 }
 
+
 function displayResults(data) {
     currenTemp.innerHTML = `${data.main.temp}&deg;F`;
 
