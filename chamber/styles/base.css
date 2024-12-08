@@ -640,3 +640,37 @@ footer{
 
     width:800px;
  }
+
+ #buttons-container {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+#buttons-container button {
+	padding: 1rem;
+	font-weight: 700;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    align-items: center;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#list .members-box:nth-child(even) {
+	background-color: #bed;
+}
+
+#grid img{
+    height: 75px;
+    width: 100%;
+}
