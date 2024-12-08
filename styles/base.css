@@ -298,7 +298,6 @@ main h1{
     flex-direction: column;
     align-items: start;
 
-    font-size: 1.2rem;
     
 
 }
@@ -306,6 +305,8 @@ main h1{
 #act-box a{
     cursor: pointer;
     color: var(--secondary-color);
+    font-size: 1.2rem;
+
 }
 
 #act-box a:hover{
