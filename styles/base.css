@@ -293,6 +293,24 @@ main h1{
     align-items: center;
 }
 
+#act-box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+
+}
+
+#act-box a{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+#act-box a:hover{
+    color: var(--primary-color);
+}
+
+
 #place{
     font-size: 2rem;
 }
