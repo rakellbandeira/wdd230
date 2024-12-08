@@ -6,7 +6,7 @@ const weatherDescription = document.querySelector('#weather-descrip');
 
 /* -3.08, -60.03 */
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-3.08&lon=-60.03&appid=15ed6aeea78a836ad48d3de8ac25f0cf&units=imperial';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-3.08&lon=-60.03&appid=15ed6aeea78a836ad48d3de8ac25f0cf&units=metrics';
 
 
 async function apiFetch() {
