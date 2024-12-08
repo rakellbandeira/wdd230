@@ -15,8 +15,8 @@ async function getLinks() {
 
 const displayLinks = (data) => {
 
-    console.log(`This data parameter: ${data[0].week}`);
-    data.forEach(element => {
+/*     console.log(`This data parameter: ${data[0].week}`);
+ */    data.forEach(element => {
         
         let div = document.querySelector('#act-box');
 

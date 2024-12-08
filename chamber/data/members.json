@@ -1,75 +1,75 @@
 {
     "members": [
-    {
-      "name": "Pioneer Marketing Solutions",
-      "address": "101 Sunrise Blvd, Innovation City, TX 75001",
-      "phone": "123-456-7890",
-      "website": "https://www.pioneermarketing.com",
-      "image": "pioneer-marketing.png",
-      "membershipLevel": "Gold",
-      "services": "Digital marketing and brand strategy",
-      "description": "Pioneer Marketing Solutions specializes in helping businesses grow their online presence through innovative marketing strategies."
-    },
-    {
-      "name": "Urban Construction Co.",
-      "address": "202 Buildmore Ave, Downtown, NY 10001",
-      "phone": "987-654-3210",
-      "website": "https://www.urbanconstruction.com",
-      "image": "urban-construction.png",
-      "membershipLevel": "Silver",
-      "services": "Commercial and residential construction",
-      "description": "Urban Construction Co. offers top-notch construction services tailored to meet the unique needs of modern cities."
-    },
-    {
-      "name": "EcoGroove Organics",
-      "address": "303 Green Valley Rd, Springfield, IL 62704",
-      "phone": "555-123-4567",
-      "website": "https://www.ecogroove.com",
-      "image": "eco-groove.png",
-      "membershipLevel": "Bronze",
-      "services": "Organic groceries and farm-to-table solutions",
-      "description": "EcoGroove Organics is committed to delivering fresh, organic produce to your doorstep."
-    },
-    {
-      "name": "DesignLab Creations",
-      "address": "404 Art District, Creative City, CA 90210",
-      "phone": "111-222-3333",
-      "website": "https://www.designlab.com",
-      "image": "design-lab.png",
-      "membershipLevel": "Gold",
-      "services": "Graphic design, branding, and web design",
-      "description": "DesignLab Creations brings your vision to life with bespoke design services."
-    },
-    {
-      "name": "NextWave Tech Innovations",
-      "address": "505 Silicon Alley, Tech City, WA 98101",
-      "phone": "444-555-6666",
-      "website": "https://www.nextwavetech.com",
-      "image": "nextwave-tech.png",
-      "membershipLevel": "Silver",
-      "services": "Software development and tech solutions",
-      "description": "NextWave Tech Innovations is a leader in custom software development and cutting-edge tech solutions."
-    },
-    {
-      "name": "ActiveLife Fitness Center",
-      "address": "606 Wellness Way, Fit Town, FL 33101",
-      "phone": "777-888-9999",
-      "website": "https://www.activelifefitness.com",
-      "image": "active-life.png",
-      "membershipLevel": "Bronze",
-      "services": "Personal training and group fitness classes",
-      "description": "ActiveLife Fitness Center is the ultimate destination for fitness enthusiasts of all levels."
-    },
-    {
-      "name": "BlueSky Consulting Group",
-      "address": "707 Corporate Plaza, Business Bay, CO 80202",
-      "phone": "222-333-4444",
-      "website": "https://www.blueskyconsulting.com",
-      "image": "bluesky-consulting.png",
-      "membershipLevel": "Gold",
-      "services": "Business consulting and market analysis",
-      "description": "BlueSky Consulting Group provides strategic solutions to help businesses achieve their goals."
-    }
+      {
+        "name": "Pioneer Marketing Solutions",
+        "address": "101 Sunrise Blvd, Innovation City, TX 75001",
+        "phone": "123-456-7890",
+        "website": "https://www.pioneermarketing.com",
+        "image": "images/members-logo/1.png",
+        "membershipLevel": "Gold",
+        "services": "Digital marketing and brand strategy",
+        "description": "Pioneer Marketing Solutions specializes in helping businesses grow their online presence through innovative marketing strategies."
+      },
+      {
+        "name": "Urban Construction Co.",
+        "address": "202 Buildmore Ave, Downtown, NY 10001",
+        "phone": "987-654-3210",
+        "website": "https://www.urbanconstruction.com",
+        "image": "images/members-logo/2.png",
+        "membershipLevel": "Silver",
+        "services": "Commercial and residential construction",
+        "description": "Urban Construction Co. offers top-notch construction services tailored to meet the unique needs of modern cities."
+      },
+      {
+        "name": "EcoGroove Organics",
+        "address": "303 Green Valley Rd, Springfield, IL 62704",
+        "phone": "555-123-4567",
+        "website": "https://www.ecogroove.com",
+        "image": "images/members-logo/3.png",
+        "membershipLevel": "Bronze",
+        "services": "Organic groceries and farm-to-table solutions",
+        "description": "EcoGroove Organics is committed to delivering fresh, organic produce to your doorstep."
+      },
+      {
+        "name": "DesignLab Creations",
+        "address": "404 Art District, Creative City, CA 90210",
+        "phone": "111-222-3333",
+        "website": "https://www.designlab.com",
+        "image": "images/members-logo/4.png",
+        "membershipLevel": "Gold",
+        "services": "Graphic design, branding, and web design",
+        "description": "DesignLab Creations brings your vision to life with bespoke design services."
+      },
+      {
+        "name": "NextWave Tech Innovations",
+        "address": "505 Silicon Alley, Tech City, WA 98101",
+        "phone": "444-555-6666",
+        "website": "https://www.nextwavetech.com",
+        "image": "images/members-logo/5.png",
+        "membershipLevel": "Silver",
+        "services": "Software development and tech solutions",
+        "description": "NextWave Tech Innovations is a leader in custom software development and cutting-edge tech solutions."
+      },
+      {
+        "name": "ActiveLife Fitness Center",
+        "address": "606 Wellness Way, Fit Town, FL 33101",
+        "phone": "777-888-9999",
+        "website": "https://www.activelifefitness.com",
+        "image": "images/members-logo/6.png",
+        "membershipLevel": "Bronze",
+        "services": "Personal training and group fitness classes",
+        "description": "ActiveLife Fitness Center is the ultimate destination for fitness enthusiasts of all levels."
+      },
+      {
+        "name": "BlueSky Consulting Group",
+        "address": "707 Corporate Plaza, Business Bay, CO 80202",
+        "phone": "222-333-4444",
+        "website": "https://www.blueskyconsulting.com",
+        "image": "images/members-logo/7.png",
+        "membershipLevel": "Gold",
+        "services": "Business consulting and market analysis",
+        "description": "BlueSky Consulting Group provides strategic solutions to help businesses achieve their goals."
+      }
   ]
 }
   

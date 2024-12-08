@@ -628,3 +628,15 @@ footer{
 
  }
 
+
+ /* directory styling */
+
+ .members-box{
+    background-color: var(--color-shade4);
+
+    margin: 5px;
+    padding: 25px;
+    line-height: 2rem;
+
+    width:800px;
+ }
