@@ -5,6 +5,7 @@ const linksURL = "https://rakellbandeira.github.io/wdd230/chamber/data/members.j
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
+     
 
    /*  console.log(data[0]); */
     displayLinks(data.members);
@@ -85,3 +86,11 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+
+
+
+
+
+
+
+

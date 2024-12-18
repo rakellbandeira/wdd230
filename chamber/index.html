@@ -21,7 +21,7 @@
     <meta property="og:image" content="https://place.abh.ai/s3fs-public/placeholder/IMG-20160518-WA0005_1200x630.jpeg" > 
     <meta property="og:url" content="" > <!-- add site link -->
 
-    <script src="scripts/formDynamic.js" defer></script>
+    
 
 </head>
 <body>
@@ -42,12 +42,18 @@
 
     <main>
 
+        <!-- Meet and greet banner -->
+        <div id="myModal" class="modal">
+            <span class="close" id="close">❌</span>
+            <img class="modal-content" id="img01" src="images/meetgreet.png" alt="Meet and Greet Banner Manaus Chamber Commerce" loading="lazy">
+        </div>
+
         <section id="homeHero">
             <h1>Work together and network here</h1>
             <!-- create the review page, opened after form is sent -->
-            <form method="get" action="review.html" class="heroForm">
+            <form method="get" action="review.html" class="heroForm" id="heroForm">
+                <legend>Discover the possibilities:</legend>
                 <fieldset>
-                    <legend>Discover the possibilities:</legend>
                     <label><input type="text" name="companyName" id="companyName" placeholder="Your company name"></label>
                 </fieldset>   
                 <fieldset>
@@ -120,11 +126,11 @@
             <div id="weatherCard">
                 <h2>Weather Information</h2>
                 <div id="weatherData">
-                    <img src="images/WeatherIcons/1.png" alt="Weather Icon" loading="lazy">
+                    <img id="weathericon" src="" alt="" loading="lazy">
                     <span id="temperature">0ºC</span>
-                    <span id="weatherTitle">Always Summer</span>
+                    <span id="weatherTitle">""</span>
                     <span class="weatherClass">Humidity:</span>
-                    <span class="weatherValue" id="humidity">0%</span>
+                    <span id="humidity" class="weatherValue" ></span>
                     <span class="weatherClass">Wind Chill:</span>
                     <span class="weatherValue" id="windChill">N/A</span>
                 </div>
@@ -132,8 +138,9 @@
 
             <div class="spotlights">
                 <h2>Business Spotlights</h2>
-                <div class="businessAccordion">
-                    <div class="accord-item">
+                <p id="membLevel"></p>
+                <div class="businessAccordion" id="businessAccordion">
+                    <!-- <div class="accord-item">
                         <div class="accord-topic">Bistro Fitz Carraldo  <span class="arrow">&#10140;</span></div>
                         <div class="accord-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, facilis provident officiis sapiente modi voluptatibus hic reiciendis aspernatur! Accusantium quasi debitis dicta earum error officiis alias exercitationem cupiditate tempore facilis.</div>
                     </div>
@@ -144,7 +151,7 @@
                     <div class="accord-item">
                         <div class="accord-topic">Caixiri  <span class="arrow">&#10140;</span></div>
                         <div class="accord-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, facilis provident officiis sapiente modi voluptatibus hic reiciendis aspernatur! Accusantium quasi debitis dicta earum error officiis alias exercitationem cupiditate tempore facilis.</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
                      
@@ -176,6 +183,8 @@
         
     </footer>
     
-    
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/formDynamic.js" defer></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>

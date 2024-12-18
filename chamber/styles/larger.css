@@ -120,27 +120,41 @@ nav{
         grid-column: 1/2;
     }
 
+
+    #heroform{
+        position: relative;
+        
+    }
+
     form{     
         
         
         width: 400px;
-        height: auto;
+        height: fit-content;
         background-color: rgb(98, 142, 98, 0.5);
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         justify-self: center;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 80px 80px 70px;
+
+        justify-items: center;
        
         padding: 20px;
     }
 
     form fieldset{
         padding: 10px;
-        margin: 10px;
+        margin: 0px auto;
         border: none;
         max-width: 100%;
+        width: 370px;
+        height: fit-content;
     }
 
     form h1 {
@@ -163,9 +177,10 @@ nav{
         margin-bottom: 5px;
     }
 
-    fieldset legend{
+    form legend{
         font-family: var(--title-font);
-        font-size: 1.5rem;
+        font-size: 2rem;
+        color: white;
     }
 
     form input{
@@ -187,7 +202,7 @@ nav{
 
     #joinButton{
         padding: 10px;
-        width: 350px;
+        width: 380px;
         max-width: 100%;
 
         display: grid;
@@ -196,6 +211,15 @@ nav{
         height: 50px;
         
     }
+
+    /* Banner */
+    
+    .modal-content{
+        width: 80%;
+        max-width: 900px;
+    }
+
+
 
     /* weather card styling */
     #placeArea{

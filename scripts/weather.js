@@ -6,7 +6,9 @@ const weatherDescription = document.querySelector('#weather-descrip');
 
 /* -3.08, -60.03 */
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-3.08&lon=-60.03&appid=15ed6aeea78a836ad48d3de8ac25f0cf&units=metrics';
+let apiKey = 'e07e8dd5bfdca7a105fc13663a3d0723';
+
+let url = 'https://api.openweathermap.org/data/2.5/weather?lat=-3.08&lon=-60.03&appid={apiKey}&units=metric';
 
 
 async function apiFetch() {
