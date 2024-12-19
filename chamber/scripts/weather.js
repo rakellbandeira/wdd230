@@ -55,7 +55,6 @@ function displayResults(data) {
 
     humidity.textContent = `${humid}`;
 
-    currentIcon.setAttribute('width', '100');
     currentIcon.setAttribute('src', iconsrc);
     currentIcon.setAttribute('alt', 'iconChanged');
 
