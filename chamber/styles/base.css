@@ -135,6 +135,9 @@ form{
     padding: 10px;
     display: grid;
     justify-items: center;
+    background-color: rgb(98, 142, 98, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 
 }
 
@@ -198,9 +201,12 @@ button {
         justify-items: center;
 
         height: 50px;
+        cursor: pointer;
+        background-color: var(--color-shade4);
         
 
 }
+
 
 /* membership I=information */
 .membership-info {
@@ -680,18 +686,7 @@ footer{
     width:800px;
  }
 
- #buttons-container {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #bed;
-	text-align: center;
-}
 
-#buttons-container button {
-	padding: 1rem;
-	font-weight: 700;
-}
 #grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -796,4 +791,61 @@ footer{
     background: darkred;
   } */
 
+
+/* Directory */
+#directory-main{
+    padding: 50px 30px;
+    
+}
+
+#members-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-rows: 100px 100px 1fr;
+    justify-content: left;
+
+    
+}
+
+#members-title{
+    grid-row: 1/2;
+    margin-bottom: 0px;
+    align-content: center;
+}
+
+#buttons-container{
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    margin: 0;
+    border: none;
+    padding: 0.5rem;
+    background-color: white;
+    text-align: center;
+    
+    
+}
+
+.buttonoption{
+    display: flex;
+    width: 100px;
+    max-width: 100%;
+    height: 60px;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+#list-container{
+    width: 370px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}   
+
+.members-box{
+    width: 320px;
+}
   
+

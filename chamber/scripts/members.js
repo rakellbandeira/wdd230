@@ -32,9 +32,11 @@ let listContainer = document.querySelector('#list-container');
         membersParag4.textContent = `${element.website}`;
         let membersParag5 = document.createElement('img');
         let imgSrc = element.image;
-        membersParag5.setAttribute = ('src', imgSrc);
-        membersParag5.setAttribute = ('height', 150);
-        membersParag5.setAttribute = ('width', 150);
+        console.log(imgSrc);
+        membersParag5.src = imgSrc;
+        membersParag5.height = 200;
+        membersParag5.style.margin = "15px 0";
+        membersBox.appendChild(membersParag5);
 
 
         let membersParag6 = document.createElement('p');
